@@ -74,7 +74,11 @@ controlElevation.load("data/etappe25.gpx");
 let pulldown = document.querySelector("#pulldown");
 for (let etappe of ETAPPEN) {
     console.log(etappe);
-    pulldown.innerHTML += `<option value= "${etappe.user}">Etappe ${etappe.nr} ${etappe.etappe} </option>` // mit value (user): Weiß der Browser, welcher User gemeint ist, darauf können wir dann später drauf zrück greifen
+let status = "";
+if (etappe.nr == "25") {
+    status = "selected";
+}
+    pulldown.innerHTML += `<option ${status} value= "${etappe.user}">Etappe ${etappe.nr} ${etappe.etappe} </option>` // mit value (user): Weiß der Browser, welcher User gemeint ist, darauf können wir dann später drauf zrück greifen
 }
 
 
