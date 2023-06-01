@@ -73,7 +73,7 @@ controlElevation.load("data/etappe25.gpx");
 //Pulldown für Navigation
 let pulldown = document.querySelector("#pulldown");
 for (let etappe of ETAPPEN) {
-    console.log(etappe);
+   // console.log(etappe);
 let status = "";
 if (etappe.nr == "25") {
     status = "selected";
