@@ -69,3 +69,6 @@ theme: "bike-tirol",
 height: 300,
 }).addTo(map);
 controlElevation.load("data/etappe25.gpx");
+
+//let profileDiv = document.querySelector("#profile");
+//profileDiv.innerHTML = "Sepp";
