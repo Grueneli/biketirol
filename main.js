@@ -57,3 +57,14 @@ let layerControl = L.control.layers({
 L.control.scale({
     imperial: false,
 }).addTo(map);
+
+
+
+// GPX-Track
+let controlElevation = L.control.elevation ({
+time: false,
+elevationDiv: "#profile",
+//theme: "steel-blue theme",
+height: 300,
+}).addTo(map);
+controlElevation.load("data/etappe25.gpx");
