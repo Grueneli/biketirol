@@ -81,6 +81,14 @@ if (etappe.nr == "25") {
     pulldown.innerHTML += `<option ${status} value= "${etappe.user}">Etappe ${etappe.nr} ${etappe.etappe} </option>` // mit value (user): Weiß der Browser, welcher User gemeint ist, darauf können wir dann später drauf zrück greifen
 }
 
+//Auf Änderungen im Pulldown reagieren
+pulldown.onchange = function (evt) {
+    //console.log (pulldown.value); // dann weiß ich, welcher User gemeint ist
+    let url = `https://${pulldown.value}.github.io/biketirol`; // Url definieren
+    //console.log (url);
+    //browser redirecten auf die andere Seite:
+    window.location.href = url; 
+}
 
 //let profileDiv = document.querySelector("#profile");
 //profileDiv.innerHTML = "Sepp";
