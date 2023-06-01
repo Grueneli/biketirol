@@ -70,5 +70,7 @@ height: 300,
 }).addTo(map);
 controlElevation.load("data/etappe25.gpx");
 
+console.log (ETAPPEN)
+
 //let profileDiv = document.querySelector("#profile");
 //profileDiv.innerHTML = "Sepp";
